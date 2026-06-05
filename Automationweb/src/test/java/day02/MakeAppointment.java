@@ -13,7 +13,7 @@ import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class MakeAppointment {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
       ChromeDriver driver = new ChromeDriver();
       driver.get("https://katalon-demo-cura.herokuapp.com/");
@@ -50,10 +50,12 @@ public class MakeAppointment {
 //      driver.findElement(By.id("radio_program_medicaid")).click();
       driver.findElement(By.id("radio_program_none")).click();
 //    fill the date
-      driver.findElement(By.id("txt_visit_date")).sendKeys("27/05/2026");
-      
+      driver.findElement(By.id("txt_visit_date")).click();
+      System.out.println("Select the date manually from the calender");
+      Thread.sleep(10000);
+           
      //      comment
-      driver.findElement(By.id("txt_comment")).sendKeys("Healthcare");
+      driver.findElement(By.id("txt_comment")).sendKeys("This is an automated test appointment.");
         
  //      book appointment
       driver.findElement(By.id("btn-book-appointment")).click();
