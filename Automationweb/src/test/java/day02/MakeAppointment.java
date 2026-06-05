@@ -41,8 +41,8 @@ public class MakeAppointment {
 //       dropDown   
       WebElement selectElement = driver.findElement(By.id("combo_facility"));
       Select dropDown = new Select(selectElement);
-      dropDown.selectByValue("Hongkong CURA Healthcare Center");
-//      dropDown.selectByValue("Seoul CURA Healthcare Center");
+//      dropDown.selectByValue("Hongkong CURA Healthcare Center");
+      dropDown.selectByValue("Seoul CURA Healthcare Center");
 //    checkbox
       driver.findElement(By.className("checkbox-inline")).click();
 //    radio button
@@ -54,7 +54,7 @@ public class MakeAppointment {
       System.out.println("Select the date manually from the calender");
       Thread.sleep(10000);
            
-     //      comment
+//      comment
       driver.findElement(By.id("txt_comment")).sendKeys("This is an automated test appointment.");
         
  //      book appointment
