@@ -13,8 +13,8 @@ public class LearnXpath {
 //		driver.findElement(By.xpath("//a[@id='btn-make-appointment']")).click();
 //		driver.findElement(By.xpath("//a[text()='Make Appointment']")).click();
 //		driver.findElement(By.xpath("//a[contains(@id,'btn-make')]")).click();
-//		driver.findElement(By.xpath("//a[contains(text(),'Make')]")).click();
-		driver.findElement(By.xpath("//a[starts-with(@id,'btn-make')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Make')]")).click();
+//		driver.findElement(By.xpath("//a[starts-with(@id,'btn-make')]")).click();
 
 	}
 

@@ -17,15 +17,15 @@ public class LearnAlert {
 //		driver.switchTo().alert().accept();
 
 //		confirmation Alert
-//		driver.findElement(By.partialLinkText("Alert with OK & Cancel")).click();
-//		driver.findElement(By.id("CancelTab")).click();
-//		driver.switchTo().alert().dismiss();
+		driver.findElement(By.partialLinkText("Alert with OK & Cancel")).click();
+		driver.findElement(By.id("CancelTab")).click();
+		driver.switchTo().alert().dismiss();
 		
 //		promt Alert
-		driver.findElement(By.partialLinkText("Alert with Textbox")).click();
-		driver.findElement(By.id("Textbox")).click();
-		driver.switchTo().alert().sendKeys("deem");
-		driver.switchTo().alert().accept();
+//		driver.findElement(By.partialLinkText("Alert with Textbox")).click();
+//		driver.findElement(By.id("Textbox")).click();
+//		driver.switchTo().alert().sendKeys("deem");
+//		driver.switchTo().alert().accept();
 		
 		
 
